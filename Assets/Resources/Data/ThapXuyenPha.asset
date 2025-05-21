@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6a08de0bc611945ac463bc4683e09b, type: 3}
+  m_Name: ThapXuyenPha
+  m_EditorClassIdentifier: 
+  ID: 
+  towerPrefab: {fileID: 2387267662862298806, guid: a21a3d542a6b0684ea815cacda7f271f, type: 3}
+  Image: {fileID: -848860766497929174, guid: 878adaf3acb61fc4f9555d454eeb6399, type: 3}
+  CoinImg: {fileID: 371018884, guid: 88a1b20106eccbd4cbb63ba6d28edb76, type: 3}
+  cost: 15

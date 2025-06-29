@@ -3,7 +3,7 @@ using System.Collections;
         using UnityEngine;
         using UnityEngine.SceneManagement;
         
-        public class SingleLevel : MonoBehaviour  // Đổi từ 'NewBehaviourScript' sang 'SingleLevel'
+        public class SingleLevel : MonoBehaviour
         {
             public void ClickBackButton()
             {

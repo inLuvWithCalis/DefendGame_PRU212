@@ -1,10 +1,8 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-
     public void PlayGame()
     {
         AudioManager.Instance.PlaySFX("btn_Click");
@@ -12,15 +10,13 @@ public class MainMenu : MonoBehaviour
     }
     private void Start()
     {
-    
-      AudioManager.Instance.PlayMusic("Theme");
-
+        AudioManager.Instance.PlayMusic("Theme");
     }
 
     private IEnumerator LoadGameScene()
     {
         yield return new WaitForSeconds(0.3f);
-     //  AudioManeger.Instance.PlayMusic("Theme");
+        //AudioManeger.Instance.PlayMusic("Theme");
         // Sau khi chờ, tải Scene mới
         SceneManager.LoadScene(1);
     }
@@ -31,7 +27,4 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Exit game!");
     }
-
-
-
 }

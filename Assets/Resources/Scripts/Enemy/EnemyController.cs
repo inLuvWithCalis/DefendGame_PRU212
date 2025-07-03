@@ -1,12 +1,6 @@
-using Newtonsoft.Json.Bson;
 using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
 
 public class EnemyController : MonoBehaviour
 {
@@ -30,14 +24,20 @@ public class EnemyController : MonoBehaviour
     private float originalMoveSpeed;
     private float originalHeath;    
     private EnemyState enemyState = EnemyState.normal;
-
+    
+    [Header("Materials")]
+    [SerializeField] private Material burnedMaterial;
+    [SerializeField] private Material slowMaterial;
+    [SerializeField] private Material stunnedMaterial;
+    private                  Material defaultMaterial;
+    private                  SpriteRenderer enemyRenderer;
+    
      enum EnemyState
     {
         normal,
         burn,
         slow,
         stunned
-
     }
     private void Awake()
     {
@@ -45,6 +45,10 @@ public class EnemyController : MonoBehaviour
     }
     void Start()
     {
+        // Initialize the enemy's path and base material
+        enemyRenderer = GetComponent<SpriteRenderer>();
+        defaultMaterial = enemyRenderer.material;
+        
         if (canFly)//random start's position
         {
             Camera mainCamera = Camera.main;
@@ -149,6 +153,8 @@ public class EnemyController : MonoBehaviour
     {
         float elapsedTime = 0;
         moveSpeed = moveSpeed * (1 - slowPercent);
+        
+        this.enemyRenderer.material = slowMaterial;
         while (elapsedTime < duration)
         {
             elapsedTime += Time.deltaTime;
@@ -162,8 +168,9 @@ public class EnemyController : MonoBehaviour
                 animator.speed = 1 - slowPercent;                
                 yield return null;
             }
-            
         }
+        // Reset the material to default
+        this.enemyRenderer.material = defaultMaterial;
         animator.speed = 1;
         moveSpeed = originalMoveSpeed;
         UpdateState(EnemyState.normal);
@@ -172,6 +179,8 @@ public class EnemyController : MonoBehaviour
     private IEnumerator StunEnemy(float duration)
     {
         float elapsedTime = 0;
+        
+        this.enemyRenderer.material = stunnedMaterial;
 
         UpdateState(EnemyState.stunned);
         while (elapsedTime < duration)
@@ -181,6 +190,8 @@ public class EnemyController : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        // Reset the material to default
+        this.enemyRenderer.material = defaultMaterial;
         animator.speed = 1;
         moveSpeed = originalMoveSpeed;
         UpdateState(EnemyState.normal);
@@ -190,6 +201,9 @@ public class EnemyController : MonoBehaviour
     {
         float elapsedTime = 0;
         float damageByTime;
+        
+        // Change the material to burnedMaterial
+        enemyRenderer.material = burnedMaterial;
     
         if (burnEffect != null) burnEffect.SetActive(true);                 
         UpdateState(EnemyState.burn);
@@ -207,6 +221,8 @@ public class EnemyController : MonoBehaviour
 			takeDamageFire(damageByTime);
             yield return null;
         }
+        // Reset the material to default
+        enemyRenderer.material = defaultMaterial;
         if (burnEffect != null)
             burnEffect.SetActive(false);
         UpdateState(EnemyState.normal);

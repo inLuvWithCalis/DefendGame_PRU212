@@ -4,7 +4,7 @@ public class CreditRoll : MonoBehaviour
 {
     public float scrollSpeed = 30f; // Điều chỉnh tốc độ cuộn tùy ý
     public float startPositionY = -500f; // Điểm bắt đầu của cuộn tín dụng
-    public float endPositionY = 500f; // Điểm kết thúc của cuộn tín dụng
+    public float endPositionY = 1000f; // Điểm kết thúc của cuộn tín dụng
 
     private RectTransform rectTransform;
 

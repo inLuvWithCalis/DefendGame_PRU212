@@ -4,13 +4,13 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] private GameObject settingsMenu;
     public void Pause()
     {
 		GameSpeed.instance.gameObject.SetActive(false);
 		Debug.Log("Hien thi");
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
-
     }
     public void Home()
     {
@@ -27,11 +27,16 @@ public class PauseMenu : MonoBehaviour
     }
     public void Settings()
     {
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1;
-
-
+        settingsMenu.SetActive(true);
+        pauseMenu.SetActive(false);
     }
+    
+    public void BackToPause()
+    {
+        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+    
     public void Resart()
     {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

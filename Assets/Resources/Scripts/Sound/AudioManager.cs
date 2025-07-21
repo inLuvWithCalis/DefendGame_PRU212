@@ -78,6 +78,18 @@ using System.Collections.Generic;
                 Debug.Log("Không tìm thấy hiệu ứng âm thanh: " + name);
             }
         }
+
+        public void PlaySFXs(AudioClip clip)
+        {
+            if (clip != null)
+            {
+                sfxSource.PlayOneShot(clip);
+            }
+            else
+            {
+                Debug.Log("Không tìm thấy hiệu ứng âm thanh.");
+            }
+        }
     
         public void StopMusic()
         {

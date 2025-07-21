@@ -42,7 +42,6 @@ public  class WinScript : MonoBehaviour
 
         string levelSceneName = levelIndex + ". Level " + levelIndex ;
 
-
 		SceneManager.LoadScene(levelSceneName);
 
 
@@ -57,7 +56,6 @@ public  class WinScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
-
     }
     public void SelectLevel()
     {

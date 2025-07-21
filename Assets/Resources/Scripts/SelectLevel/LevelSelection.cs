@@ -12,16 +12,22 @@ public class LevelSelection : MonoBehaviour
         AudioManager.Instance.PlayMusic("nhac_chon_map");
         UpdateLevelStatus();
         UpdateLevelImage();
-        //PlayerPrefs.DeleteAll();
     }
-
+    
     private void UpdateLevelStatus()
     {      
+        int currentLevelNum = int.Parse(gameObject.name);
         int previousLevelNum = int.Parse(gameObject.name) - 1;
         Debug.LogError("Checking level: " + gameObject.name + ", Previous Level: " + previousLevelNum);
-        if (PlayerPrefs.GetInt("Lv" + previousLevelNum.ToString().PadLeft(2, '0')) == 1)
+
+        if (currentLevelNum == 1)
         {
-            unlocked = true;
+            this.unlocked = true;
+        }
+        else
+        {
+            string previousLevelKey = "Lv" + previousLevelNum.ToString().PadLeft(2, '0');
+            this.unlocked = PlayerPrefs.GetInt(previousLevelKey) == 1;
         }
     }
 
@@ -36,8 +42,6 @@ public class LevelSelection : MonoBehaviour
         {
             lockImage.gameObject.SetActive(true);
         }
-        
-        
     }
 
     public void PressSelection()

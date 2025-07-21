@@ -18,6 +18,7 @@ public class LevelSelection : MonoBehaviour
     private void UpdateLevelStatus()
     {      
         int previousLevelNum = int.Parse(gameObject.name) - 1;
+        Debug.LogError("Checking level: " + gameObject.name + ", Previous Level: " + previousLevelNum);
         if (PlayerPrefs.GetInt("Lv" + previousLevelNum.ToString().PadLeft(2, '0')) == 1)
         {
             unlocked = true;
@@ -43,11 +44,9 @@ public class LevelSelection : MonoBehaviour
     {
         if(unlocked)
         {
-
             string levelIndex = gameObject.name.PadLeft(2, '0');
             string levelSceneName = levelIndex + ". Level " + levelIndex;
 			AudioManager.Instance.PlaySFX(levelSceneName);
-
 			SceneManager.LoadScene(levelSceneName);
         }
     }

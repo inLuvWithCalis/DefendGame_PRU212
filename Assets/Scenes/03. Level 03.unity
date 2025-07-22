@@ -4852,8 +4852,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281317191
-  m_fontColor: {r: 0.27842474, g: 0.7169812, b: 0.18533282, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6108,8 +6108,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6133,8 +6133,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6303,15 +6303,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 631269768}
   lines:
-  - "Cu\u1ED1i c\xF9ng, anh h\xF9ng: Sau nh\u1EEFng tr\u1EADn \u0111\xE1nh d\u0169ng
-    m\xE3nh v\xE0 n\u1ED7 l\u1EF1c kh\xF4ng ng\u1EEBng ch\xFAng ta \u0111\xE3 ti\u1EBFn
-    t\u1EDBi cu\u1ED9c chi\u1EBFn cu\u1ED1i c\xF9ng v\u1EDBi Qu\xE2n \u0111o\xE0n
-    H\u1EAFc \xE1m. "
-  - "H\u1ECD \u0111ang t\u1ED5 ch\u1EE9c m\u1ED9t cu\u1ED9c t\u1EA5n c\xF4ng l\u1EDBn,
-    H\xF2a b\xECnh c\u1EE7a V\u01B0\u01A1ng qu\u1ED1c v\xE0 t\u01B0\u01A1ng lai c\u1EE7a
-    ch\xFAng ta n\u1EB1m trong tay b\u1EA1n. "
-  - "Cu\u1ED9c chi\u1EBFn cu\u1ED1i c\xF9ng n\xE0y, ch\xFAng ta ph\u1EA3i gi\xE0nh
-    chi\u1EBFn th\u1EAFng\u2026."
+  - "At long last, hero. Through your courage and unwavering effort, we\u2019ve arrived
+    at the final battle with the Dark Legion."
+  - "They are launching a massive assault. The peace of the Kingdom \u2014 and our
+    very future \u2014 lies in your hands."
+  - "We cannot afford to lose this final battle \u2014 victory is our only option."
   textSpeed: 0.0000005
   gameUI: {fileID: 49009761}
   panelUI: {fileID: 1092519783}
@@ -19927,12 +19923,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ch\xE0o m\u1EEBng b\u1EA1n \u0111\u1EBFn v\u1EDBi c\u1EA5p \u0111\u1ED9
-    h\u01B0\u1EDBng d\u1EABn Tower defense. \u1EDF \u0111\xE2y b\u1EA1n s\u1EBD c\xF3
-    th\u1EC3 t\xECm hi\u1EBFu nh\u1EEFng \u0111i\u1EC1u c\u01A1 b\u1EA3n c\u1EE7a
-    tr\xF2 ch\u01A1i."
+  m_text: See the buttons below? Those are your Towers. You can use them to attack
+    the invaders.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -19957,8 +19951,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
-  m_fontSizeBase: 23
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -19998,7 +19992,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1732242922
@@ -23208,46 +23202,27 @@ MonoBehaviour:
   - {fileID: -1575034286, guid: 677ce3a79f20ddb49924446bf9346b0d, type: 3}
   - {fileID: -1555882798, guid: 677ce3a79f20ddb49924446bf9346b0d, type: 3}
   - {fileID: -814676770, guid: 0c08b968970c33c449d9ca026998f117, type: 3}
-  - {fileID: 1385238582, guid: f5272d77d4af2f446a21295f0d5cb301, type: 3}
-  - {fileID: 21300000, guid: db39808c3e55ce44aac46650583ec75d, type: 3}
   - {fileID: 21300000, guid: 6740e9dc19caddb4e8e18db9213224fc, type: 3}
   itemTexts:
-  - "Th\u1EA5y nh\u1EEFng n\xFAt \u1EDF ph\xEDa d\u01B0\u1EDBi? \u0110\xF3 l\xE0
-    Th\xE1p c\u1EE7a b\u1EA1n. B\u1EA1n c\xF3 th\u1EC3 s\u1EED d\u1EE5ng ch\xFAng
-    \u0111\u1EC3 t\u1EA5n c\xF4ng k\u1EBB x\xE2m l\u01B0\u1EE3c. "
-  - "Th\xE1p c\xF3 hi\u1EC7u qu\u1EA3 nh\u1EA5t xung quanh ch\u1ED7 m\xE0u x\xE1m.
-    T\xF4i \u0111\xE3 gi\u1EDBi h\u1EA1n v\u1ECB tr\xED c\u1EE7a b\u1EA1n \u1EDF
-    b\u1EA3n \u0111\u1ED3. "
-  - "H\xE3y th\u1EED \u0111\u1EB7t th\xE1p c\u1EE7a b\u1EA1n b\u1EB1ng c\xE1ch b\u1EA5m
-    chu\u1ED9t tr\xE1i , Chu\u1ED9t ph\u1EA3i \u0111\u1EC3 h\u1EE7y vi\u1EC7c ch\u1ECDn"
-  - "Thanh s\u1EE9c kh\u1ECFe m\xE0u xanh l\xE1 c\xE2y \u1EDF ph\xEDa tr\xEAn c\xF9ng
-    c\u1EE7a m\xE0n h\xECnh l\xE0 Base Health c\u1EE7a b\u1EA1n."
-  - "K\u1EBB th\xF9 \u0111\u1EA1t s\xE1t th\u01B0\u01A1ng cu\u1ED1i c\xF9ng l\xEAn
-    Base Health c\u1EE7a b\u1EA1n. \u0110\u1EEBng \u0111\u1EC3 ch\xFAng v\u01B0\u1EE3t
-    qua!"
-  - "B\u1EA1n c\xF3 th\u1EC3 t\u0103ng t\u1ED1c \u0111\u1ED9 tr\xF2 ch\u01A1i "
-  - "M\u1ED7i wave s\u1EBD c\xF3 10 v\xE0ng v\xE0 khi gi\u1EBFt qu\xE1i s\u1EBD \u0111\u01B0\u1EE3c
-    nh\u1EADn coin"
-  - "H\xE3y th\u1EED n\xE2ng c\u1EA5p th\xE1p c\u1EE7a b\u1EA1n. Ch\u1ECDn v\xE0o
-    th\xE1p mu\u1ED1n n\xE2ng c\u1EA5p."
-  - "B\xE2y gi\u1EDD h\xE3y th\u1EED n\xE2ng c\u1EA5p th\xE1p c\u1EE7a b\u1EA1n b\u1EB1ng
-    c\xE1ch nh\u1EA5p v\xE0o nh\u1EEFng n\xFAt \u1EDF d\u01B0\u1EDBi. "
-  - "Range: Ph\u1EA1m vi      Damage: S\u1EE9c m\u1EA1nh                 Fire Rate:
-    T\u1ED1c \u0111\u1ED9       Sell: B\xE1n       Close: T\u1EAFt        Target:
-    Ch\u1ECDn m\u1EE5c ti\xEAu   "
-  - "B\u1EB1ng c\xE1ch n\xE2ng c\u1EA5p th\xE1p c\u1EE7a b\u1EA1n, b\u1EA1n \u0111ang
-    c\u1EA3i thi\u1EC7n ch\u1EC9 s\u1ED1  th\xE1p c\u1EE7a b\u1EA1n. "
-  - "B\xE2y gi\u1EDD th\xE1p c\u1EE7a b\u1EA1n \u0111\xE3 \u0111\u01B0\u1EE3c n\xE2ng
-    c\u1EA5p, h\xE3y chi\u1EBFn \u0111\u1EA5u v\u1EDBi nhi\u1EC1u qu\xE1i h\u01A1n. "
-  - "N\u1EBFu c\u1EA7n thi\u1EBFt h\xE3y mua th\xEAm th\xE1p ph\xF2ng th\u1EE7  \u0111\u1EC3
-    \u0111\xE1nh b\u1EA1i nh\u1EEFng con qu\xE1i m\u1EA1nh  "
-  - "Th\xE1p c\xE0ng nhi\u1EC1u ti\u1EC1n th\xEC c\xE0ng nhi\u1EC1u ch\u1EC9 s\u1ED1
-    , hi\u1EC7u \u1EE9ng  "
-  - "Qu\xE1i c\xE0ng v\u1EC1 sau c\xE0ng m\u1EA1nh, c\xF3 qu\xE1i \u0111i d\u01B0\u1EDBi
-    \u0111\u1EA5t v\xE0 qu\xE1i \u0111i \u0111\u01B0\u1EDDng kh\xF4ng "
-  - "H\xE3y s\u1EED d\u1EE5ng nh\u1EEFng ability, ch\xFAng c\xF3 th\u1EC3 c\u1EE9u
-    b\u1EA1n trong nh\u1EEFng l\xFAc nguy c\u1EA5p"
-  - "H\xE3y b\u1EA3o  v\u1EC7 th\u1EADt  t\u1ED1t. "
+  - See the buttons below? Those are your Towers. You can use them to attack the
+    invaders.
+  - "Towers work best around the gray zones. I\u2019ve restricted where you can place
+    them on the map."
+  - Try placing your tower.
+  - "Let\u2019s see your tower in action against the enemies!  "
+  - It seems like all of them are down.
+  - The green health bar at the top of the screen is your Base Health.
+  - "The enemy dealt the final blow to your Base Health. Don\u2019t let them get
+    through!"
+  - You'll get 10 gold at the start of each wave. Earn extra gold by defeating enemies
+    and using the buttons below.
+  - By upgrading your tower, you're improving its stats.
+  - Now that your tower is upgraded, get ready to fight more monsters!
+  - If necessary, buy more defense towers to defeat stronger monsters.
+  - The more expensive the tower, the better its stats and effects.
+  - "Monsters get tougher in later waves\u2014some walk on the ground, others fly."
+  - Well defended! Victory is yours!
+  - Good luck!
   step: 0
   isGuideActive: 1
 --- !u!114 &2030996043

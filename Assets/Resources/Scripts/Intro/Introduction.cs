@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Introduction : MonoBehaviour
 {
 	public static Introduction Instance;
+	
+	private Coroutine currentTextCoroutine;
 
 	public TextMeshProUGUI instructionText;
 	public Image itemImage;
@@ -68,15 +70,10 @@ public class Introduction : MonoBehaviour
 
 	private void UpdateItemImage()
 	{
-
 		if (step > 0 && step < itemImages.Length)
 		{
-
 			itemImage.sprite = itemImages[step];
-
-
 		}
-
 	}
 
 	private void UpdateItemImageAndText()
@@ -97,31 +94,18 @@ public class Introduction : MonoBehaviour
 
 	public void NextStep()
 	{
-		//if (step == itemImages.Length - 1)
-		//{
-		//    nextButton.gameObject.SetActive(false);
-
-		//}
-
 		if (step < itemImages.Length - 1)
 		{
 			step++;
 			UpdateItemImageAndText();
-			StartInstructionCoroutine();
+			
+			if (this.currentTextCoroutine != null)
+			{
+				StopCoroutine(this.currentTextCoroutine); // Dừng Coroutine hiện tại nếu có
+			}
+			this.currentTextCoroutine = StartCoroutine(ShowInstructions()); // Bắt đầu Coroutine mới
 			nextButton.gameObject.SetActive(true);
-
 		}
-		//      else if (step == itemImages.Length - 1)
-		//      {
-		//          backButton.gameObject.SetActive(true);
-
-		//          nextButton.gameObject.SetActive(false);
-		//       //   gameObject.SetActive(false);
-		//	// Bắt đầu game logic (sinh ra quái vật, chạy game...)
-		//	//Time.timeScale = 1;
-
-		//}
-
 	}
 	public void Exit()
 	{
@@ -132,34 +116,32 @@ public class Introduction : MonoBehaviour
 
 	private void BackStep()
 	{
-
 		if (step > 0)
 		{
 			step--;
 			UpdateItemImageAndText();
-			StartInstructionCoroutine();
+			if (this.currentTextCoroutine != null)
+			{
+				StopCoroutine(this.currentTextCoroutine);
+			}
+			this.currentTextCoroutine = StartCoroutine(this.ShowInstructions());
 			backButton.gameObject.SetActive(true);
-
 		}
-		//else if (step == 0)
-		//{
-		//    backButton.gameObject.SetActive(false);
-		//    nextButton.gameObject.SetActive(true);
-
-		//}
-
 	}
-
-
+	
 	private IEnumerator ShowTextLetterByLetter(string fullText)
 	{
 		instructionText.text = ""; // Xóa nội dung hiện tại
+		int currentStep = step; // Lưu lại bước hiện tại để kiểm tra trạng thái
 
 		for (int i = 0; i < fullText.Length; i++)
 		{
-
+			if (currentStep != step)
+			{
+				yield break;
+			}
 			instructionText.text += fullText[i]; // Thêm ký tự vào dòng văn bản
-			yield return new WaitForSeconds(0.00005f); // Chờ một khoảng thời gian trước khi hiển thị ký tự tiếp theo
+			yield return new WaitForSeconds(0.0000005f); // Chờ một khoảng thời gian trước khi hiển thị ký tự tiếp theo
 		}
 	}
 

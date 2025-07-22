@@ -12980,42 +12980,27 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bb9576aa22304514ca9cfb4909210c04, type: 3}
   - {fileID: 184056236, guid: 9153f73b9bc0a08438df5e790512e5f5, type: 3}
   - {fileID: 632040723, guid: 439e7b5c1471cff40aad0e3b89280fca, type: 3}
-  - {fileID: 21300000, guid: db39808c3e55ce44aac46650583ec75d, type: 3}
   - {fileID: 21300000, guid: 6740e9dc19caddb4e8e18db9213224fc, type: 3}
   itemTexts:
-  - "Th\u1EA5y nh\u1EEFng n\xFAt \u1EDF ph\xEDa d\u01B0\u1EDBi? \u0110\xF3 l\xE0
-    Th\xE1p c\u1EE7a b\u1EA1n. B\u1EA1n c\xF3 th\u1EC3 s\u1EED d\u1EE5ng ch\xFAng
-    \u0111\u1EC3 t\u1EA5n c\xF4ng k\u1EBB x\xE2m l\u01B0\u1EE3c. "
-  - "Th\xE1p c\xF3 hi\u1EC7u qu\u1EA3 nh\u1EA5t xung quanh ch\u1ED7 m\xE0u x\xE1m.
-    T\xF4i \u0111\xE3 gi\u1EDBi h\u1EA1n v\u1ECB tr\xED c\u1EE7a b\u1EA1n \u1EDF
-    b\u1EA3n \u0111\u1ED3. "
-  - "H\xE3y th\u1EED \u0111\u1EB7t th\xE1p c\u1EE7a b\u1EA1n."
-  - "H\xE3y xem t\xF2a th\xE1p c\u1EE7a b\u1EA1n ph\xF2ng th\u1EE7 nh\u01B0 th\u1EBF
-    n\xE0o tr\u01B0\u1EDBc b\u1ECDn qu\xE1i."
-  - "C\xF3 v\u1EBB nh\u01B0 t\u1EA5t c\u1EA3 h\u1ECD \u0111\xE3 ch\u1EBFt."
-  - "Thanh s\u1EE9c kh\u1ECFe m\xE0u xanh l\xE1 c\xE2y \u1EDF ph\xEDa tr\xEAn c\xF9ng
-    c\u1EE7a m\xE0n h\xECnh l\xE0 Base Health c\u1EE7a b\u1EA1n."
-  - "K\u1EBB th\xF9 \u0111\u1EA1t s\xE1t th\u01B0\u01A1ng cu\u1ED1i c\xF9ng l\xEAn
-    Base Health c\u1EE7a b\u1EA1n. \u0110\u1EEBng \u0111\u1EC3 ch\xFAng v\u01B0\u1EE3t
-    qua!"
-  - "M\u1ED7i wave s\u1EBD c\xF3 10 v\xE0ng v\xE0 khi gi\u1EBFt qu\xE1i s\u1EBD \u0111\u01B0\u1EE3c
-    c\xE1ch nh\u1EA5p v\xE0o nh\u1EEFng n\xFAt \u1EDF d\u01B0\u1EDBi. "
-  - "Range: Ph\u1EA1m vi      Damage: S\u1EE9c m\u1EA1nh                 Fire Rate:
-    T\u1ED1c \u0111\u1ED9       Sell: B\xE1n       Close: T\u1EAFt        Target:
-    Ch\u1ECDn m\u1EE5c ti\xEAu   "
-  - "B\u1EB1ng c\xE1ch n\xE2ng c\u1EA5p th\xE1p c\u1EE7a b\u1EA1n, b\u1EA1n \u0111ang
-    c\u1EA3i thi\u1EC7n ch\u1EC9 s\u1ED1  th\xE1p c\u1EE7a b\u1EA1n. "
-  - "B\xE2y gi\u1EDD th\xE1p c\u1EE7a b\u1EA1n \u0111\xE3 \u0111\u01B0\u1EE3c n\xE2ng
-    c\u1EA5p, h\xE3y chi\u1EBFn \u0111\u1EA5u v\u1EDBi nhi\u1EC1u qu\xE1i h\u01A1n. "
-  - "N\u1EBFu c\u1EA7n thi\u1EBFt h\xE3y mua th\xEAm th\xE1p ph\xF2ng th\u1EE7  \u0111\u1EC3
-    \u0111\xE1nh b\u1EA1i nh\u1EEFng con qu\xE1i m\u1EA1nh  "
-  - "Th\xE1p c\xE0ng nhi\u1EC1u ti\u1EC1n th\xEC c\xE0ng nhi\u1EC1u ch\u1EC9 s\u1ED1
-    , hi\u1EC7u \u1EE9ng  "
-  - "Th\xE1p c\xE0ng nhi\u1EC1u ti\u1EC1n th\xEC c\xE0ng nhi\u1EC1u ch\u1EC9 s\u1ED1
-    , hi\u1EC7u \u1EE9ng  "
-  - "Qu\xE1i c\xE0ng v\u1EC1 sau c\xE0ng m\u1EA1nh, c\xF3 qu\xE1i \u0111i d\u01B0\u1EDBi
-    \u0111\u1EA5t v\xE0 qu\xE1i \u0111i \u0111\u01B0\u1EDDng kh\xF4ng "
-  - "B\u1EA3o v\u1EC7 t\u1ED1t.  B\u1EA1n \u0111\xE3 th\u1EAFng!"
+  - See the buttons below? Those are your Towers. You can use them to attack the
+    invaders.
+  - "Towers work best around the gray zones. I\u2019ve restricted where you can place
+    them on the map."
+  - Try placing your tower.
+  - "Let\u2019s see your tower in action against the enemies!"
+  - It seems like all of them are down.
+  - The green health bar at the top of the screen is your Base Health.
+  - "The enemy dealt the final blow to your Base Health. Don\u2019t let them get
+    through!"
+  - "You\u2019ll get 10 gold at the start of each wave. Earn extra gold by defeating
+    enemies and using the buttons below."
+  - By upgrading your tower, you're improving its stats.
+  - Now that your tower is upgraded, get ready to fight more monsters!
+  - If necessary, buy more defense towers to defeat stronger monsters.
+  - The more expensive the tower, the better its stats and effects.
+  - "Monsters get tougher in later waves\u2014some walk on the ground, others fly."
+  - Well defended! Victory is yours!
+  - Good luck!
   step: 0
   isGuideActive: 1
 --- !u!114 &1031925757
@@ -14268,12 +14253,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ch\xE0o m\u1EEBng b\u1EA1n \u0111\u1EBFn v\u1EDBi c\u1EA5p \u0111\u1ED9
-    h\u01B0\u1EDBng d\u1EABn Tower defense. \u1EDF \u0111\xE2y b\u1EA1n s\u1EBD c\xF3
-    th\u1EC3 t\xECm hi\u1EBFu nh\u1EEFng \u0111i\u1EC1u c\u01A1 b\u1EA3n c\u1EE7a
-    tr\xF2 ch\u01A1i."
+  m_text: Welcome to the Tower Defense tutorial! This is where you'll learn the basics
+    of how the game works.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -14298,8 +14281,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
-  m_fontSizeBase: 23
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14339,7 +14322,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1125946350
@@ -16315,8 +16298,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9adb1f542a93ae489bacfeae21e8394, type: 2}
-  m_sharedMaterial: {fileID: -8643439910342830561, guid: c9adb1f542a93ae489bacfeae21e8394, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17953,8 +17936,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281317191
-  m_fontColor: {r: 0.27842474, g: 0.7169812, b: 0.18533282, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -21436,23 +21419,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1317017904}
   lines:
-  - "Ch\xE0o m\u1EEBng anh h\xF9ng \u0111\u1EBFn v\u1EDBi StormWind, T\xF4i l\xE0
-    c\xF4ng ch\xFAa c\u1EE7a V\u01B0\u01A1ng qu\u1ED1c StormWind  v\xF9ng \u0111\u1EA5t
-    c\u1EE7a h\xF2a b\xECnh v\xE0 s\u1EF1 an to\xE0n. C\xF3 m\u1ED9t th\u1EBF l\u1EF1c
-    h\u1EAFc \xE1m \u0111ang ti\u1EBFn t\u1EDBi bi\xEAn gi\u1EDBi c\u1EE7a ch\xFAng
-    ta."
-  - "H\u1ECD \u0111ang g\u1EEDi \u0111\u1EE3t t\u1EA5n c\xF4ng ng\xE0y c\xE0ng m\u1EA1nh
-    v\xE0 qu\xE1i v\u1EADt \u0111\xE1ng s\u1EE3 \u0111\u1EC3 t\xE0n ph\xE1 V\u01B0\u01A1ng
-    qu\u1ED1c. Ch\xFAng ta kh\xF4ng c\xF2n th\u1EDDi gian n\u1EEFa, b\u1EA1n l\xE0
-    ng\u01B0\u1EDDi anh h\xF9ng duy nh\u1EA5t c\xF3 th\u1EC3 ng\u0103n ch\u1EB7n
-    h\u1ECD. "
-  - "Xin h\xE3y nhanh ch\xF3ng \u0111\u1EBFn T\u01B0\u1EDDng Th\xE0nh ph\xEDa B\u1EAFc
-    \u2013 n\u01A1i ph\xF2ng tuy\u1EBFn cu\u1ED1i c\xF9ng c\u1EE7a ch\xFAng ta. C\xE1c
-    chi\u1EBFn binh \u0111ang c\u1EA7m c\u1EF1 t\u1EEBng gi\xE2y, nh\u01B0ng h\u1ECD
-    s\u1EBD kh\xF4ng tr\u1EE5 \u0111\u01B0\u1EE3c l\xE2u n\u1EBFu kh\xF4ng c\xF3
-    s\u1EF1 tr\u1EE3 gi\xFAp c\u1EE7a anh h\xF9ng. H\xE3y mang theo v\u0169 kh\xED
-    v\xE0 l\xF2ng d\u0169ng c\u1EA3m, V\u01B0\u01A1ng qu\u1ED1c StormWind \u0111\u1EB7t
-    to\xE0n b\u1ED9 hy v\u1ECDng v\xE0o b\u1EA1n!"
+  - "Welcome, hero, to StormWind. I am the princess of the StormWind Kingdom \u2014
+    the land of peace and safety. A dark force is approaching our borders."
+  - "They are sending increasingly powerful waves of terrifying monsters to devastate
+    the Kingdom. We are running out of time \u2014 you are the only hero who can
+    stop them."
+  - "Hurry to the Northern Wall \u2014 our last stand. Our soldiers are fighting
+    bravely, but they won\u2019t hold out for long. Take up your arms and your courage
+    \u2014 all of StormWind is counting on you!"
   textSpeed: 0.0000005
   gameUI: {fileID: 1077410175}
   panelUI: {fileID: 274893278}
